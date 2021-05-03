@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<meta http-equiv="refresh" content="15">
+</head>
+<style type="text/css">
+		table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+.a{
+	position: right;
+}
+a{
+    text-decoration: none;
+}
+</style>
+<body style="background-color: green">
+<div style="border:2px,solid"><section>
+	<aside style="width: 100%; background-color: #DAF7A6 ;height: 50px;font-size: 30px;text-align: center;border:2px,solid;font-weight:bold">DIBRUGARH_EAST_MACHINES</aside>
+</section>
+</div>
+<div>
+	<form>
+	<table align="left" style="width: 100%;height: 70%">
+		<tr style="width: 100%;height: 70px;background-color: #F87188">
+			<th style="font-size: 30px;font-weight: bold;color:#239B56;">MACHINES</th>
+			<th style="font-size: 30px;font-weight: bold;color:#239B56;">CHECK</th>
+			
+		</tr>
+		<tr style="width: 100%;height: 50px;background-color: #F2D7D5">
+			<th>DESKTOP-5FKHT</th>
+			
+			<th><a href="{{ url_for('dibrugarh_east_machine1_check') }}">CHECK</a></th>
+		</tr>
+		<tr style="width: 100%;height: 50px;background-color: #D98880">
+			<th>DESKTOP-5A</th>
+			
+			<th><a href="{{ url_for('dibrugarh_east_machine2_check') }}">CHECK</a></th>
+		</tr>
+		<tr style="width: 100%;height: 50px;background-color: #5DADE2">
+			<th>DESKTOP-5B</th>
+			
+			<th><a href="{{ url_for('dibrugarh_east_machine3_check') }}">CHECK</a></th>
+		</tr>
+		<tr style="width: 100%;height: 50px;background-color: #F9E79F ">
+			<th>DESKTOP-5C</th>
+			
+			<th><a href="{{ url_for('dibrugarh_east_machine4_check') }}">CHECK</a></th>
+		</tr>
+		<tr style="width: 100%;height: 50px;background-color: #A6ACAF">
+			<th>DESKTOP-5D</th>
+			
+			<th><a href="{{ url_for('dibrugarh_east_machine5_check') }}">CHECK</a></th>
+		</tr>
+		
+	</table>
+</form>
+</div>
+</body>
+</html>

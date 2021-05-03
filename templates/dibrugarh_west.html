@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Freematerial</title>
+	<style type="text/css">
+		table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+.a{
+	position: right;
+}
+	</style>
+</head>
+<body style="background-color: #F89471 ">
+    <div style="border:2px,solid"><section>
+        <aside style="width: 100%; background-color: #DAF7A6 ;height: 50px;font-size: 30px;text-align: center;border:2px,solid;font-weight:bold">DIBRUGARH_WEST</aside>
+    </section>
+    </div>
+    {% for your_list in ip1 %}
+
+    {% if 'Received = 4' in response %}
+    
+        <p>{{your_list}}</p>
+    
+
+    {% else %}
+    
+        
+        <table align="left" style="width: 100%;height: 80px;"> 
+            <tr style="background-color: #B0F871  ">
+                <th>CIRCLE</th>
+                <th>IP</th>
+                <th>STATUS</th>
+            </tr>
+            <tr style="background-color: #F8F071 ">
+                <th>DIBRUGARH_WEST</th>
+                <th>{{your_list}}
+                    </th>
+                    <th>Down</th>
+            </tr>
+        </table>
+        
+     
+    {% endif %}
+        
+{% endfor %}
+
+
+</body>
+</html>
